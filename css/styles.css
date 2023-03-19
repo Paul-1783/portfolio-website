@@ -8,10 +8,10 @@
 
 :root {
     --orange: #f76414;
-    --dark_salmon: #e46d36; 
+    --dark_salmon: #e46d36;
     --sea_greenish: #41815d;
     --white: #fff;
-    --lightgray:#d3d3d3;
+    --lightgray: #d3d3d3;
     --mellow_brown: #db9d35;
     --beige: #fbf1a2;
     --blackish: rgba(0, 0, 0, 0.3);
@@ -58,7 +58,8 @@ a:visited {
     color: var(--dark_salmon);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration: var(--no_text-decoration);
 }
 
@@ -83,7 +84,7 @@ button,
 button:hover,
 button:focus,
 .button:hover,
-.button:focus{
+.button:focus {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -144,15 +145,15 @@ button:focus,
 .grid__item {
     display: inline-block;
     width: 33%;
+    margin: 20px;
 }
 
-@supports(display: grid)
- {
+@supports(display: grid) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
-        margin: 0;
+        margin: 20px;
     }
 
     .grid__item {
@@ -166,33 +167,34 @@ button:focus,
         grid-column: 3 / 3;
         grid-row: 1 / 3;
     }
- }
- 
- @media all and (max-width: 500px) {
-     .grid {
-         grid-template-columns: 1fr;
-     }
- }
+}
 
- @media all and (min-width: 500px) and (max-width: 750px) {
-     .grid {
-         grid-template-columns: 1fr 1fr;
-      }
- }
-
- @media all and (max-width: 750px) {
+@media all and (max-width: 500px) {
     .grid {
-             grid-gap: 10px;
-        }
+        grid-template-columns: 1fr;
+    }
+}
 
-        .grid__item:last-child {
-            grid-column: auto / auto;
-            grid-row: auto / auto;
-        }
-    
-        h1 {
-            font-size: 22px;
-        } 
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+        margin: 0;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
 }
 
 .center_main {
@@ -202,7 +204,7 @@ button:focus,
     text-align: center;
 }
 
-.past_experiences { 
+.past_experiences {
     margin-left: auto;
     margin-right: auto;
 }
