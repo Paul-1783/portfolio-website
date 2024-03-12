@@ -196,6 +196,10 @@ button:focus,
     text-align: center;
 }
 
+.center_main>div {
+    margin: 2em;
+}
+
 .past_experiences {
     margin-left: auto;
     margin-right: auto;
